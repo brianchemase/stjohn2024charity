@@ -15,7 +15,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/bootstrap-icons.css" rel="stylesheet">
 
@@ -40,7 +40,7 @@ https://templatemo.com/tm-567-nomad-force
             <section class="hero" id="hero">
                 <div class="heroText">
                     <h1 class="text-white mt-5 mb-lg-4" data-aos="zoom-in" data-aos-delay="800">
-                        ST John Ambulance 2024 Walk
+                        Save a life walkathon 
                     </h1>
 
                     <p class="text-secondary-white-color" data-aos="fade-up" data-aos-delay="1000">
@@ -50,7 +50,7 @@ https://templatemo.com/tm-567-nomad-force
 
                 <div class="videoWrapper">
                     <video autoplay="" loop="" muted="" class="custom-video" poster="videos/792bd98f3e617786c850493560e11c45.jpg">
-                        <source src="videos/814dc43e870597176cad645798825c03.mp4" type="video/mp4">
+                        <source src="videos/video001.mp4" type="video/mp4">
 
                         Your browser does not support the video tag.
                     </video>
@@ -62,7 +62,7 @@ https://templatemo.com/tm-567-nomad-force
             <nav class="navbar navbar-expand-lg bg-light shadow-lg">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
-                        <strong>Nomad Force</strong>
+                        <strong>#SaveaLifeWakathon</strong>
                     </a>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,16 +76,16 @@ https://templatemo.com/tm-567-nomad-force
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#about">Our Studio</a>
+                                <a class="nav-link" href="#about">Our Event</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#portfolio">Portfolio</a>
+                                <a class="nav-link" href="#packages">Packages</a>
                             </li>
 
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a class="nav-link" href="#news">News & Events</a>
-                            </li>
+                            </li> -->
 
                             <li class="nav-item">
                                 <a class="nav-link" href="#contact">Contact Us</a>
@@ -99,7 +99,7 @@ https://templatemo.com/tm-567-nomad-force
                 <div class="container mb-5 pb-lg-5">
                     <div class="row">
                         <div class="col-12">
-                            <h2 class="mb-3" data-aos="fade-up">Let us create...</h2>
+                            <h2 class="mb-3" data-aos="fade-up">#2024WalkerThon Save a life walk</h2>
                         </div>
 
                         <div class="col-lg-6 col-12 mt-3 mb-lg-5">
@@ -110,21 +110,121 @@ https://templatemo.com/tm-567-nomad-force
                             <p data-aos="fade-up" data-aos-delay="500">This Bootstrap 5 layout is free to use for your business. You are allowed to edit it in any way you like. However, please do not redistribute this template ZIP file for a template download purpose on any other website such as Free CSS collections.</p>
                         </div>
 
+                        <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                        Register Here
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Charity Registration</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                      <label for="fullnames">Full Names:</label>
+                                      <input type="text" class="form-control" id="fullnames" placeholder="Enter your full names" required>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="organization">Organization/Institution:</label>
+                                      <input type="text" class="form-control" id="organization" placeholder="Enter organization/institution name">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="phone">Phone Number:</label>
+                                      <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="email">Email Address:</label>
+                                      <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="walk_distance">Walk Distance:</label><br>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="walk_distance" id="5km" value="5km">
+                                        <label class="form-check-label" for="5km">5km</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="walk_distance" id="10km" value="10km">
+                                        <label class="form-check-label" for="10km">10km</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="walk_distance" id="21km" value="21km">
+                                        <label class="form-check-label" for="21km">21km</label>
+                                      </div>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="participating_category">Participating Category:</label>
+                                      <select class="form-control" id="participating_category">
+                                        <option value="Basic">Basic</option>
+                                        <option value="Standard">Standard</option>
+                                        <option value="Premium">Premium</option>
+                                        <option value="Premium Plus">Premium Plus</option>
+                                        <option value="Super Premium">Super Premium</option>
+                                        <option value="Family Package">Family Package</option>
+                                        <option value="Adult St John Members only">Adult St John Members only</option>
+                                      </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="tshirt_size">T-shirt Size:</label>
+                                        <select class="form-control" id="tshirt_size">
+                                          <option value="8-10 yrs">8-10 yrs</option>
+                                          <option value="12-14 yrs">12-14 yrs</option>
+                                          <option value="S">S</option>
+                                          <option value="M">M</option>
+                                          <option value="L">L</option>
+                                          <option value="XL">XL</option>
+                                          <option value="2XL">2XL</option>
+                                          <option value="3XL">3XL</option>
+                                        </select>
+                                      </div>
+                                      
+                                      <div class="form-group">
+                                        <label>T-shirt Color:</label><br>
+                                        <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="tshirt_color" id="black" value="Black">
+                                          <label class="form-check-label" for="black">Black</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="tshirt_color" id="green" value="Green">
+                                          <label class="form-check-label" for="green">Green</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="tshirt_color" id="grey" value="Grey">
+                                          <label class="form-check-label" for="grey">Grey</label>
+                                        </div>
+                                      </div>
+                            
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Register </button>
+                            </div>
+                        </form>
+                        </div>
+                        </div>
+                    </div>
+
                     </div>
                 </div>
 
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-3 col-12 p-0">      
-                            <img src="images/elena-rabkina-eVVzwsNhNf4-unsplash.jpg" class="img-fluid about-image" alt="">
+                            <img src="images/alejandro-luengo-jSvoR46Xk8Q-unsplash.jpg" class="img-fluid about-image" alt="">
                         </div>
 
                         <div class="col-lg-3 col-12 bg-dark">  
                             <div class="d-flex flex-column flex-wrap justify-content-center h-100 py-5 px-4 pt-lg-4 pb-lg-0">
-                                <h3 class="text-white mb-3" data-aos="fade-up">We’re - idealists and strategic thinkers.</h3>
+                                <h5 class="text-white mb-3" data-aos="fade-up">We're passionate advocates and compassionate visionaries.</h5>
 
-                                <p class="text-secondary-white-color" data-aos="fade-up">Over six years in the video business</p>
-
+                                <p class="text-secondary-white-color" data-aos="fade-up">Dedicated to making a difference in our community for over six years.</p>
+                                
                                 <div class="mt-3 custom-links">
                                     
                                     <a href="#news" class="text-white custom-link" data-aos="zoom-in" data-aos-delay="100">Read News & Events</a>
@@ -207,12 +307,12 @@ https://templatemo.com/tm-567-nomad-force
                 </div>
             </section>
 
-            <section class="section-padding" id="portfolio">
+            <section class="section-padding" id="packages">
                 <div class="container">
                     <div class="row">
 
                         <div class="col-12">
-                            <h2 class="mb-5 text-center" data-aos="fade-up">Portfolio</h2>
+                            <h2 class="mb-5 text-center" data-aos="fade-up">Packages</h2>
                         </div>
 
                         <div class="col-lg-6 col-12">
@@ -222,7 +322,7 @@ https://templatemo.com/tm-567-nomad-force
                                 </a>
 
                                 <div class="portfolio-info">                     
-                                    <h4 class="portfolio-title mb-0">Effortless</h4>
+                                    <h4 class="portfolio-title mb-0">Basic</h4>
 
                                     <p class="text-danger">Branding</p>
                                 </div>
@@ -271,86 +371,7 @@ https://templatemo.com/tm-567-nomad-force
                 </div>
             </section>
 
-            <section class="news section-padding" id="news">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-12">
-                            <h2 class="mb-5 text-center" data-aos="fade-up">News & Events</h2>
-                        </div>
-
-                        <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-                            <div class="news-thumb" data-aos="fade-up">
-                                <a href="news-detail.html" class="news-image-hover news-image-hover-warning">
-                                    <img src="images/news/caroline-lm-uqveD8dYPUM-unsplash.jpg" class="img-fluid large-news-image news-image" alt="">
-                                </a>
-
-                                <div class="news-category bg-warning text-white">News</div>
-                                
-                                <div class="news-text-info">
-                                    <h5 class="news-title">
-                                        <a href="news-detail.html" class="news-title-link">The rise of the gig economy spells the end for these workers the old system</a>
-                                    </h5>
-
-                                    <span class="text-muted">22 hours ago</span>
-                                </div>
-                            </div> 
-                        </div>
-
-                        <div class="col-lg-6 col-12">
-                            <div class="news-thumb news-two-column d-flex flex-column flex-lg-row" data-aos="fade-up">
-                                <div class="news-top w-100">
-                                    
-                                    <a href="news-detail.html" class="news-image-hover news-image-hover-primary">
-                                        <img src="images/news/jean-philippe-delberghe-MmanXAs1sKw-unsplash.jpeg" class="img-fluid news-image" alt="">
-                                    </a>
-
-                                    <div class="news-category bg-primary text-white">Events</div>
-                                </div>
-                                
-                                <div class="news-bottom w-100">
-                                    <div class="news-text-info">
-                                        <h5 class="news-title">
-                                            <a href="news-detail.html" class="news-title-link">Job Opportunities: Digital, Marketing</a>
-                                        </h5>
-
-                                        <div class="d-flex flex-wrap">
-                                            <span class="text-muted me-2">
-                                                <i class="bi-geo-alt-fill me-1 mb-2 mb-lg-0"></i>
-                                                Alaska,
-                                            </span>
-
-                                            <span class="text-muted">August 6, 2021</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-
-                            <div class="news-thumb news-two-column d-flex flex-column flex-lg-row" data-aos="fade-up">
-                                <div class="news-top w-100" data-aos="fade-up">
-                                    
-                                    <a href="news-detail.html" class="news-image-hover news-image-hover-success">
-                                        <img src="images/news/maria-stewart-p4tj0g-_aMM-unsplash.jpeg" class="img-fluid news-image" alt="">
-                                    </a>
-
-                                    <div class="news-category bg-success text-white">News</div>
-                                </div>
-                                
-                                <div class="news-bottom w-100">
-                                    <div class="news-text-info">
-                                        <h5 class="news-title">
-                                            <a href="news-detail.html" class="news-title-link">What happened to new viral video?</a>
-                                        </h5>
-
-                                        <span class="text-muted">6 days ago</span>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
-
-                    </div>
-                </div>
-            </section>
+           
 
             <section class=" contact section-padding" id="contact">
                 <div class="container">
@@ -383,33 +404,6 @@ https://templatemo.com/tm-567-nomad-force
                                         
                                     </div>
 
-                                    <div class="col-12">
-                                        <label for="services" class="form-label">Services<sup class="text-danger">*</sup></label>
-                                    </div>
-
-                                    <div class="col-lg-4 col-12">
-                                        <div class="form-check">
-                                            <input type="checkbox" id="checkbox1" name="checkbox1" class="form-check-input">
-
-                                            <label class="form-check-label" for="checkbox1">Branding</label>
-                                          </div>
-                                    </div>
-
-                                    <div class="col-lg-4 col-12 my-2 my-lg-0">
-                                        <div class="form-check">
-                                            <input type="checkbox" id="checkbox2" name="checkbox2" class="form-check-input">
-
-                                            <label class="form-check-label" for="checkbox2">Digital Experiences</label>
-                                          </div>
-                                    </div>
-
-                                    <div class="col-lg-4 col-12">
-                                        <div class="form-check">
-                                            <input type="checkbox" id="checkbox3" name="checkbox3" class="form-check-input">
-
-                                            <label class="form-check-label" for="checkbox3">Web Development</label>
-                                          </div>
-                                    </div>
                                 </div>
 
                                 <div class="col-lg-5 col-12 mx-auto mt-5">
@@ -423,8 +417,9 @@ https://templatemo.com/tm-567-nomad-force
             </section>
 
             <section class="google-map">
-                <iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" class="map-iframe" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.209943431282!2d36.81206641477071!3d-1.286229399038656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0bb792b5d1bf%3A0x42f85eac38f9818c!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2s!4v1647326548410!5m2!1sen!2s" class="map-iframe" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </section>
+            
 
         </main>
 
@@ -435,19 +430,18 @@ https://templatemo.com/tm-567-nomad-force
                     <div class="col-12">
                         <h5 class="text-white">
                             <i class="bi-geo-alt-fill me-2"></i>
-                            State of Rio de Janeiro, Brazil
+                            Nairobi Kenya
                         </h5>
 
-                        <a href="mailto:info@company.com" class="custom-link mt-3 mb-5">
-                            info@company.com
+                        <a href="mailto:info@stjohnkenya.org" class="custom-link mt-3 mb-5">
+                            info@stjohnkenya.org
                         </a>
                     </div>
 
                     <div class="col-6">
-                        <p class="copyright-text mb-0">Copyright © Nomad Force 2021 
+                        <p class="copyright-text mb-0">Copyright © StJohnAmbulanceKenya 2024 
                         
-                        <br><br>Design: <a href="https://templatemo.com/page/1" target="_parent">TemplateMo</a></p>
-                    
+                        
                     </div>
 
                     <div class="col-lg-3 col-5 ms-auto">
@@ -477,6 +471,9 @@ https://templatemo.com/tm-567-nomad-force
         <script src="js/magnific-popup-options.js"></script>
         <script src="js/scrollspy.min.js"></script>
         <script src="js/custom.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     </body>
 </html>
